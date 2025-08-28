@@ -1,0 +1,15 @@
+# Virtual environment
+.venv/
+
+# Merged model folders
+merged_sinllama_8b/
+merged_sinllama_8b-instruct/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Generated outputs
+generated_story.txt
+bedrock_response.txt
