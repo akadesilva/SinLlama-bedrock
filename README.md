@@ -2,6 +2,22 @@
 
 This project merges a Sinhala LoRA adapter with Llama 3-8B base model to create a Sinhala-capable variant for Amazon Bedrock deployment.
 
+## Credits
+
+This work builds upon the excellent Sinhala language adaptation by the Polyglots team:
+- **SinLlama LoRA Adapter**: [polyglots/SinLlama_v01](https://huggingface.co/polyglots/SinLlama_v01)
+- **Extended Sinhala Tokenizer**: [polyglots/Extended-Sinhala-LLaMA](https://huggingface.co/polyglots/Extended-Sinhala-LLaMA)
+
+## Benefits of Bedrock Deployment
+
+Importing this model to Amazon Bedrock enables:
+- **On-demand inference** - Pay only for what you use, no infrastructure management
+- **Serverless scaling** - Automatic scaling based on request volume
+- **Enterprise security** - Built-in data protection and compliance features
+- **API integration** - Easy integration with existing AWS services
+
+For detailed pricing information, refer to [AWS Bedrock Pricing](https://aws.amazon.com/bedrock/pricing/).
+
 ## Prerequisites
 
 - EC2 instance with sufficient memory (r8i.4xlarge recommended - 128GB RAM)
