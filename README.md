@@ -83,6 +83,8 @@ aws s3 mb s3://your-bedrock-models-bucket
 aws s3 sync merged_sinllama_8b/ s3://your-bedrock-models-bucket/sinllama-8b/
 ```
 
+![S3 Upload](screenshots/1.upload-to-s3.png)
+
 ## Import to Bedrock
 
 ### Via AWS Console:
@@ -95,14 +97,7 @@ aws s3 sync merged_sinllama_8b/ s3://your-bedrock-models-bucket/sinllama-8b/
    - **Architecture**: `llama`
 4. Start import job
 
-### Via AWS CLI:
-```bash
-aws bedrock create-model-import-job \
-    --job-name "sinllama-8b-import" \
-    --imported-model-name "sinllama-8b" \
-    --role-arn "arn:aws:iam::ACCOUNT:role/BedrockModelImportRole" \
-    --model-data-source "s3Uri=s3://your-bedrock-models-bucket/sinllama-8b/"
-```
+![Model Import](screenshots/2.import-model.png)
 
 ## Model Specifications
 
@@ -116,13 +111,9 @@ aws bedrock create-model-import-job \
 
 Once imported, the model supports English and Sinhala text generation using completion-style prompts.
 
-### Screenshots
-The following screenshots demonstrate the complete workflow:
+![Playground Access](screenshots/3.open-playground.png)
 
-1. **S3 Upload** (`screenshots/1.upload-to-s3.png`) - Uploading merged model to S3 bucket
-2. **Model Import** (`screenshots/2.import-model.png`) - Importing model into Bedrock
-3. **Playground Access** (`screenshots/3.open-playground.png`) - Opening Bedrock playground
-4. **Model Inference** (`screenshots/4.model-inference.png`) - Testing Sinhala text generation
+![Model Inference](screenshots/4.model-inference.png)
 
 ### API Usage
 ```python
