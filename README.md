@@ -97,13 +97,21 @@ aws bedrock create-model-import-job \
 
 Once imported, the model supports English and Sinhala text generation using completion-style prompts.
 
-Example inference:
+### Screenshots
+The following screenshots demonstrate the complete workflow:
+
+1. **S3 Upload** (`1.upload-to-s3.png`) - Uploading merged model to S3 bucket
+2. **Model Import** (`2.import-model.png`) - Importing model into Bedrock
+3. **Playground Access** (`3.open-playground.png`) - Opening Bedrock playground
+4. **Model Inference** (`4.model-inference.png`) - Testing Sinhala text generation
+
+### API Usage
 ```python
 import boto3
 
 bedrock = boto3.client('bedrock-runtime')
 response = bedrock.invoke_model(
-    modelId='sinllama-8b',
+    modelId='<YOUR_IMPORTED_MODEL_ARN>',
     body=json.dumps({
         "prompt": "ආයුබෝවන්! How can I help you today?\n",
         "max_tokens": 50

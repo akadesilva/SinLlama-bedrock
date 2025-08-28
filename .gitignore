@@ -13,3 +13,6 @@ __pycache__/
 # Generated outputs
 generated_story.txt
 bedrock_response.txt
+
+# Bedrock invoke script (not working properly)
+bedrock_invoke.py
