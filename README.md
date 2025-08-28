@@ -93,8 +93,6 @@ aws s3 sync merged_sinllama_8b/ s3://your-bedrock-models-bucket/sinllama-8b/
 3. Configure:
    - **Model name**: `sinllama-8b`
    - **S3 URI**: `s3://your-bedrock-models-bucket/sinllama-8b/`
-   - **Model format**: `hugging-face`
-   - **Architecture**: `llama`
 4. Start import job
 
 ![Model Import](screenshots/2.import-model.png)
