@@ -22,7 +22,7 @@ For detailed pricing information, refer to [AWS Bedrock Pricing](https://aws.ama
 
 - EC2 instance with sufficient memory (r8i.4xlarge recommended - 128GB RAM)
   - **Note**: The r8i.4xlarge instance (~$1.10/hour on-demand) is only needed to run the combine script
-  - Model merging typically completes within 1 hour
+  - Model merging takes less than 10 minutes, but setup, merging, and S3 upload typically completes within 1 hour
   - Instance can be shut down after uploading merged model to S3
 - Python environment with transformers==4.51.3
 - AWS CLI configured with Bedrock permissions
