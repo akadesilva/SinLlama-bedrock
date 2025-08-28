@@ -100,10 +100,10 @@ Once imported, the model supports English and Sinhala text generation using comp
 ### Screenshots
 The following screenshots demonstrate the complete workflow:
 
-1. **S3 Upload** (`1.upload-to-s3.png`) - Uploading merged model to S3 bucket
-2. **Model Import** (`2.import-model.png`) - Importing model into Bedrock
-3. **Playground Access** (`3.open-playground.png`) - Opening Bedrock playground
-4. **Model Inference** (`4.model-inference.png`) - Testing Sinhala text generation
+1. **S3 Upload** (`screenshots/1.upload-to-s3.png`) - Uploading merged model to S3 bucket
+2. **Model Import** (`screenshots/2.import-model.png`) - Importing model into Bedrock
+3. **Playground Access** (`screenshots/3.open-playground.png`) - Opening Bedrock playground
+4. **Model Inference** (`screenshots/4.model-inference.png`) - Testing Sinhala text generation
 
 ### API Usage
 ```python
